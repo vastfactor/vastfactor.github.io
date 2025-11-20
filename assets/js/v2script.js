@@ -4,13 +4,24 @@
   // Preloader
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
+    // Define the hide function to reuse it
+    const hidePreloader = () => {
+      // If already hidden, stop here to prevent flickering
+      if (preloader.style.display === 'none') return;
+
       preloader.style.transition = 'opacity 0.5s ease';
       preloader.style.opacity = '0';
       setTimeout(() => {
         preloader.style.display = 'none';
       }, 500);
-    });
+    };
+
+    // 1. Try to hide it normally when everything loads
+    window.addEventListener('load', hidePreloader);
+
+    // 2. SAFETY NET: Force hide after 1000ms (1 second) max
+    // This prevents the user from waiting if an image is stuck
+    setTimeout(hidePreloader, 1000);
   }
 
   // Back to Top Button

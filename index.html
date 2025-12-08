@@ -406,7 +406,7 @@
                  <!-- Slide 4 -->
                 <div class="swiper-slide">
                     <div class="glass-card team-card">
-                        <div class="team-img">ID</div>
+                        <div class="team-img">I</div>
                         <div class="team-info">
                             <h4>Imash</h4>
                             <h5 class="text-gradient">Co-founder & Technical Consultant</h5>
@@ -558,5 +558,40 @@
     <!-- Custom JavaScript -->
     <script src="assets/js/v2script.js"></script>
       
+    <!-- Vanta.js HALO Animated Background for #products section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.halo.min.js"></script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/three.r134.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.rings.min.js"></script>
+    <script>
+    VANTA.RINGS({
+      el: "#services",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xffffff
+    })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.r134.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.globe.min.js"></script>
+    <script>
+    VANTA.GLOBE({
+      el: "#team",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+    </script>
   </body>
 </html>

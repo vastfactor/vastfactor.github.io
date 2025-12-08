@@ -770,16 +770,16 @@ footer .copyright {
 
 /* 3. The Image Sources */
 .img-ai {
-    background-image: url('../img/p1.jpg');
+    background-image: url('../img/p1.png');
 }
 .img-auto {
-    background-image: url('../img/p2.jpg');
+    background-image: url('../img/p2.png');
 }
 .img-predict {
-    background-image: url('../img/p3.jpg');
+    background-image: url('../img/p3.png');
 }
 .img-doc {
-    background-image: url('../img/p4.jpg'); /* Using p3 as requested */
+    background-image: url('../img/p4.png'); /* Using p3 as requested */
 }
 
 /* 4. The Content Container (Restores Padding) */
